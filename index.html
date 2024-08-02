@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        /* Estilos adicionais para tornar as bordas das colunas visíveis */
+        .border-example {
+            border: 2px solid #0a0a0a;
+            margin-bottom: 10px;
+            /* Espaçamento entre colunas */
+            text-align: center;
+            /* Texto centralizado dentro das colunas */
+            padding: 10px 0;
+            /* Preenchimento superior e inferior para as colunas */
+        }
+    </style>
+
+    <title>Tutorial Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Tutorial Section -->
+        <h2 class="text-center text-primary">Bootstrap Tutorial</h2>
+        <p>Bootstrap is a front-end framework that helps you build mobile-first and responsive websites quickly and
+            easily.</p>
+
+        <!-- Exemplo de Responsividade -->
+        <h3>Responsividade com Colunas</h3>
+        <p>Utilize as classes de colunas para controlar como os elementos devem ser dispostos em diferentes tamanhos de
+            tela.</p>
+        <div class="row">
+            <div class="col-4 border-example">Coluna sem resoluções</div>
+            <div class="col-4 border-example">Coluna sem resoluções</div>
+            <div class="col-4 border-example">Coluna sem resoluções</div>
+        </div>      
+        <div class="row">
+            <div class="col-lg-12 border-example">Coluna em resoluções pequenas</div>
+        </div>
+        <p class="text-muted">As colunas acima se adaptam e reorganizam dependendo do tamanho da tela.</p>
+
+        <!-- Responsividade com Colunas -->
+        <h3>Como as colunas se adaptam em diferentes tamanhos de tela</h3>
+        <p>Observe como as colunas se ajustam ao tamanho da tela mudando a largura da janela do navegador.</p>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 border-example">Col-sm-6 Col-md-4 Col-lg-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 border-example">Col-sm-6 Col-md-4 Col-lg-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 border-example">Col-sm-6 Col-md-4 Col-lg-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 border-example">Col-sm-6 Col-md-4 Col-lg-3</div>
+            <div class="col-12 border-example">Col-12</div>
+            <div class="col-6 border-example">Col-6</div>
+        </div>
+
+        <h3>Exemplo de quebra de linha em diferentes resoluções de tela</h3>
+        <p>As colunas abaixo irão quebrar em diferentes linhas conforme o tamanho da tela:</p>
+
+        <div class="row">
+            <div class="col-6 col-md-4 border-example">Col-6 Col-md-4</div>
+            <div class="col-6 col-md-4 border-example">Col-6 Col-md-4</div>
+            <div class="col-6 col-md-4 border-example">Col-6 Col-md-4</div>
+        </div>
+
+        <!-- Alinhamento de Botões -->
+        <h3>Alinhamento de Botões</h3>
+        <div class="mb-3">
+            <button type="button" class="btn btn-primary float-left mr-2">Esquerda</button>
+            <button type="button" class="btn btn-success float-right">Direita</button>
+        </div>
+        <div class="clearfix"></div> <!-- Limpar flutuações -->
+
+        <h3>Cores do Bootstrap e Classes de Espaçamento</h3>Margens e Preenchimentos (Margins and Paddings):
+        <div class="markdown prose w-full break-words dark:prose-invert light">
+            <h3>Margens e Preenchimentos (Margins and Paddings):</h3>
+            <p>No Bootstrap, as margens e os preenchimentos são gerenciados através de um conjunto de classes abreviadas
+                que seguem um padrão:</p>
+            <ul>
+                <li>
+                    <code>m</code> representa <code>margin</code> (margem).
+                </li>
+                <li><code>p</code> representa <code>padding</code> (preenchimento).</li>
+                <li>A letra seguinte indica o lado: <code>t</code> (top), <code>b</code> (bottom), <code>l</code>
+                    (left), <code>r</code> (right), <code>x</code> (left + right), <code>y</code> (top + bottom). Se
+                    nenhum lado for especificado, a margem ou preenchimento é aplicado a todos os lados.</li>
+                <li>O número que segue representa o tamanho do espaçamento, variando de 0 a 5 no Bootstrap 4. Cada
+                    número corresponde a um valor pré-definido de espaçamento (por exemplo, <code>3</code> geralmente
+                    representa <code>1rem</code>).</li>
+            </ul>
+            <h3>Exemplos de Classes de Espaçamento:</h3>
+            <ul>
+                <li><code>mt-3</code>: Aplica uma margem superior (<code>margin-top</code>) de <code>1rem</code>.</li>
+                <li><code>mb-3</code>: Aplica uma margem inferior (<code>margin-bottom</code>) de <code>1rem</code>.
+                </li>
+                <li><code>ml-3</code>: Aplica uma margem à esquerda (<code>margin-left</code>) de <code>1rem</code>.
+                </li>
+                <li><code>mr-3</code>: Aplica uma margem à direita (<code>margin-right</code>) de <code>1rem</code>.
+                </li>
+                <li><code>mx-3</code>: Aplica uma margem horizontal (<code>margin-left</code> e
+                    <code>margin-right</code>) de <code>1rem</code>.</li>
+                <li><code>my-3</code>: Aplica uma margem vertical (<code>margin-top</code> e <code>margin-bottom</code>)
+                    de <code>1rem</code>.</li>
+                <li><code>pt-3</code>: Aplica um preenchimento superior (<code>padding-top</code>) de <code>1rem</code>.
+                </li>
+                <li><code>pb-3</code>: Aplica um preenchimento inferior (<code>padding-bottom</code>) de
+                    <code>1rem</code>.</li>
+                <li><code>pl-3</code>: Aplica um preenchimento à esquerda (<code>padding-left</code>) de
+                    <code>1rem</code>.</li>
+                <li><code>pr-3</code>: Aplica um preenchimento à direita (<code>padding-right</code>) de
+                    <code>1rem</code>.</li>
+                <li><code>px-3</code>: Aplica um preenchimento horizontal (<code>padding-left</code> e
+                    <code>padding-right</code>) de <code>1rem</code>.</li>
+                <li><code>py-3</code>: Aplica um preenchimento vertical (<code>padding-top</code> e
+                    <code>padding-bottom</code>) de <code>1rem</code>.</li>
+            </ul>
+            <h3>Responsividade:</h3>
+            <p>Além disso, o Bootstrap permite tornar essas classes responsivas, usando sufixos que representam os
+                breakpoints: <code>-sm</code>, <code>-md</code>, <code>-lg</code>, <code>-xl</code>, <code>-xxl</code>.
+                Por exemplo:</p>
+            <ul>
+                <li><code>mt-md-3</code>: Aplica uma margem superior de <code>1rem</code> em dispositivos de tamanho
+                    médio (<code>md</code>) ou maior.</li>
+                <li><code>px-lg-3</code>: Aplica um preenchimento horizontal de <code>1rem</code> em dispositivos de
+                    tamanho grande (<code>lg</code>) ou maior.</li>
+            </ul>
+            <p>Essas classes de espaçamento proporcionam uma maneira flexível e eficiente de ajustar o layout e o
+                espaçamento dos elementos na sua página, sem a necessidade de escrever CSS adicional. Ao utilizar o
+                sistema de espaçamento do Bootstrap, você pode manter a consistência em todo o design e garantir que o
+                site seja visualmente equilibrado e bem organizado.</p>
+        </div>
+        px-lg-3: Aplica um preenchimento horizontal de 1rem em dispositivos de tamanho grande (lg) ou maior.
+        <div class="row">
+            <div class="col-4 border-example">
+                <button type="button" class="btn btn-primary mb-2">Primário mb-2</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 border-example">
+                <button type="button" class="btn btn-secondary mt-4 mb-2">Secundário mt-4 mb-2</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 border-example">
+                <button type="button" class="btn btn-success mt-3">Sucesso mt-3</button>
+            </div>
+        </div>
+        
+
+        <!-- Temas de Cores do Bootstrap -->
+        <h3>Cores do Bootstrap</h3>
+        <div>
+            <button type="button" class="btn btn-primary">primary</button>
+            <button type="button" class="btn btn-secondary">secondary</button>
+            <button type="button" class="btn btn-success">success</button>
+            <button type="button" class="btn btn-danger">danger</button>
+            <button type="button" class="btn btn-warning">warning</button>
+            <button type="button" class="btn btn-info">info</button>
+            <button type="button" class="btn btn-light">light</button>
+            <button type="button" class="btn btn-dark">dark</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
